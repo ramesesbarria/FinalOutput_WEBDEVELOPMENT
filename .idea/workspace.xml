@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Add resources and image files" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ramesesluis777"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ramesesluis777/FinalOutput_WEBDEVELOPMENT.git",
+    "accountId": "542a68e0-ca76-42a9-ac48-3787b0f21536"
+  }
+}]]></component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "git-widget-placeholder": "master",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Setup initial index.php and project">
+      <option name="closed" value="true" />
+      <created>1716961181963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961181963</updated>
+    </task>
+    <task id="LOCAL-00002" summary="xxx">
+      <option name="closed" value="true" />
+      <created>1716961398067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961398067</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Setup initial index.php and project">
+      <option name="closed" value="true" />
+      <created>1716961425647</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961425647</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Setup initial index.php and project">
+      <option name="closed" value="true" />
+      <created>1716961471574</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961471574</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Setup initial index.php and project">
+      <option name="closed" value="true" />
+      <created>1716961559530</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961559530</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Setup DbConnector">
+      <option name="closed" value="true" />
+      <created>1716961902607</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716961902607</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add DBConnector classes">
+      <option name="closed" value="true" />
+      <created>1716962097722</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716962097722</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Setup initial index.php and project">
+      <option name="closed" value="true" />
+      <created>1716962456889</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716962456889</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Setup database and models">
+      <option name="closed" value="true" />
+      <created>1716963078891</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716963078891</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add resources and image files">
+      <option name="closed" value="true" />
+      <created>1716963236957</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716963236957</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="Cleanup php code" />
+    <MESSAGE value="xxx" />
+    <MESSAGE value="Setup DbConnector" />
+    <MESSAGE value="Add DBConnector classes" />
+    <MESSAGE value="Setup initial index.php and project" />
+    <MESSAGE value="Setup database and models" />
+    <MESSAGE value="Add resources and image files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add resources and image files" />
+  </component>
+</project>
