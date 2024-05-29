@@ -1,4 +1,9 @@
 <?php
+// This is for outputting error logs for debugging purposes.
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 include 'domain/init.php';
 
 if (isset($_SESSION['user_id'])) {
