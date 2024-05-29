@@ -11,7 +11,7 @@ $(function(){
 
       $.ajax({
         type: "POST",
-        url: "domain/ajax/getHashtag.php",
+        url: "domain/requests/getHashtag.php",
         data: dataString,
         cache: false,
         success: function(data){

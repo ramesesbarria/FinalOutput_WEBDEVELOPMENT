@@ -6,7 +6,7 @@ $(function(){
 		var count     = counter.text();
 		var button    = $(this);
 
-		//     $.post('http://localhost/twitter/domain/ajax/like.php', {like:tweet_id, user_id:user_id}, function(){
+		//     $.post('http://localhost/twitter/domain/requests/like.php', {like:tweet_id, user_id:user_id}, function(){
  		// 	counter.show();
  		// 	button.addClass('unlike-btn');
 		// 	button.removeClass('like-btn');
@@ -19,7 +19,7 @@ $(function(){
 
          $.ajax({
             type: "POST",
-            url: "domain/ajax/like.php",
+            url: "domain/requests/like.php",
             data: {like:tweet_id, user_id:user_id},
             cache: false,
             success: function(data){
@@ -66,7 +66,7 @@ $(function(){
         // }); 
         $.ajax({
             type: "POST",
-            url: "domain/ajax/like.php",
+            url: "domain/requests/like.php",
             data: {unlike:tweet_id, user_id:user_id},
             cache: false,
             success: function(data){

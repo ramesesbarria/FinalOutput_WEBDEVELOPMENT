@@ -11,7 +11,7 @@ $(function(){
 			
 	   	console.log(tweet_id);
            console.log(user_id);
-			$.post('domain/ajax/comment.php', {showPopup:tweet_id,user_id:user_id}, function(data){
+			$.post('domain/requests/comment.php', {showPopup:tweet_id,user_id:user_id}, function(data){
 				$('.popupComment').html(data);
 				 
 				$('.close-retweet-popup').click(function(){
@@ -42,7 +42,7 @@ $(function(){
 		// console.log(user_id);
         // console.log(comment);
 	
-	    $.post('domain/ajax/comment.php', {qoute:tweet_id,user_id:user_id,comment:comment}, function(data){
+	    $.post('domain/requests/comment.php', {qoute:tweet_id,user_id:user_id,comment:comment}, function(data){
 			
 		   $('.retweet-popup').hide();
            $('.comments').html(data);
@@ -68,7 +68,7 @@ $(function(){
         
        console.log(tweet_id);
        console.log(user_id);
-        $.post('domain/ajax/comment.php', {showReply:tweet_id,user_id:user_id}, function(data){
+        $.post('domain/requests/comment.php', {showReply:tweet_id,user_id:user_id}, function(data){
             $('.popupComment').html(data);
              
             $('.close-retweet-popup').click(function(){
@@ -99,7 +99,7 @@ $(document).one('click', '.reply-it', function(event){
     // console.log(user_id);
     // console.log(comment);
 
-    $.post('domain/ajax/comment.php', {reply:comment_id,user_id:user_id,comment:comment}, function(data){
+    $.post('domain/requests/comment.php', {reply:comment_id,user_id:user_id,comment:comment}, function(data){
         
        $('.retweet-popup').hide();
        $('.comments').html(data);

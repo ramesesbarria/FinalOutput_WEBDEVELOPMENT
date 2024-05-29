@@ -7,7 +7,7 @@ $(function(){
         
     //    console.log(tweet_id);
     
-        $.post('domain/ajax/users.php', {retweetby:tweet_id}, function(data){
+        $.post('domain/requests/users.php', {retweetby:tweet_id}, function(data){
             $('.popupUsers').html(data);
              
             $('.close-retweet-popup').click(function(){
@@ -29,7 +29,7 @@ $(function(){
         
     //    console.log(tweet_id);
     
-        $.post('domain/ajax/users.php', {likeby:tweet_id}, function(data){
+        $.post('domain/requests/users.php', {likeby:tweet_id}, function(data){
             $('.popupUsers').html(data);
              
             $('.close-retweet-popup').click(function(){
@@ -51,7 +51,7 @@ $(function(){
        
 
     
-        $.post('domain/ajax/users.php', {following:user_id}, function(data){
+        $.post('domain/requests/users.php', {following:user_id}, function(data){
             $('.popupUsers').html(data);
              
             $('.close-retweet-popup').click(function(){
@@ -73,7 +73,7 @@ $(function(){
         
   
     
-        $.post('domain/ajax/users.php', {follower:user_id}, function(data){
+        $.post('domain/requests/users.php', {follower:user_id}, function(data){
             $('.popupUsers').html(data);
              
             $('.close-retweet-popup').click(function(){
@@ -104,7 +104,7 @@ $(document).on('click','.reply', function(){
     
    console.log(tweet_id);
    console.log(user_id);
-    $.post('domain/ajax/comment.php', {showReply:tweet_id,user_id:user_id}, function(data){
+    $.post('domain/requests/comment.php', {showReply:tweet_id,user_id:user_id}, function(data){
         $('.popupComment').html(data);
          
         $('.close-retweet-popup').click(function(){

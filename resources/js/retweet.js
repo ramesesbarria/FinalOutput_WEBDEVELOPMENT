@@ -19,7 +19,7 @@ $(function(){
 		
 
 				
-		$.post('domain/ajax/retweet.php', {option:tweet_id,user_id:user_id,retweeted:retweeted_it , sign:sign , tmp:flag,qoq:qoq , status:status}, function(data){
+		$.post('domain/requests/retweet.php', {option:tweet_id,user_id:user_id,retweeted:retweeted_it , sign:sign , tmp:flag,qoq:qoq , status:status}, function(data){
 			$op.html(data);
 		
 			
@@ -44,7 +44,7 @@ $(function(){
            event.stopImmediatePropagation();
 			
 			
-			$.post('domain/ajax/retweet.php', {retweet:tweet_id,user_id:user_id,isQoute:flag,qoq:qoq}, function(data){
+			$.post('domain/requests/retweet.php', {retweet:tweet_id,user_id:user_id,isQoute:flag,qoq:qoq}, function(data){
 				// $('.popupTweet').html(data);
 
 				$counter.text(data);
@@ -52,7 +52,7 @@ $(function(){
 	        $c.removeClass('retweet-i').addClass('retweeted-i');			
 			$('.retweet-div').hide();
 
-			// $.ajax({
+			// $.requests({
 			// 	url: 'http://localhost/twitter/home.php',
 			// 	success: function(data) {
 				  
@@ -80,7 +80,7 @@ $(function(){
 			
 			event.stopImmediatePropagation();
 		    console.log(tweet_id);
-			$.post('domain/ajax/retweet.php', {unretweet:tweet_id,user_id:user_id}, function(data){
+			$.post('domain/requests/retweet.php', {unretweet:tweet_id,user_id:user_id}, function(data){
 				 
 					//  if (data == 0)
 					//   $counter.text('');
@@ -111,7 +111,7 @@ $(function(){
 			// console.log(tweet_id);
 			// console.log($retweeted_it);
 			// console.log($sign);
-			$.post('domain/ajax/retweet.php', {showPopup:tweet_id,user_id:user_id}, function(data){
+			$.post('domain/requests/retweet.php', {showPopup:tweet_id,user_id:user_id}, function(data){
 				$('.popupTweet').html(data);
 				 
 				$('.close-retweet-popup').click(function(){
@@ -142,7 +142,7 @@ $(function(){
 		console.log(user_id);
         console.log(comment);
 	
-	    $.post('domain/ajax/retweet.php', {qoute:tweet_id,user_id:user_id,comment:comment,isQoute:flag,qoq:qoq}, function(data){
+	    $.post('domain/requests/retweet.php', {qoute:tweet_id,user_id:user_id,comment:comment,isQoute:flag,qoq:qoq}, function(data){
 			
 		   $('.retweet-popup').hide();
 		   location.reload();

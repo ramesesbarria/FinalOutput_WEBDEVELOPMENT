@@ -9,7 +9,7 @@ $(document).on('click','.follow-btn', function(e){
     $button = $(this);
     if($button.hasClass('follow')) {
         // alert(follow_id);
-      $.post('domain/ajax/follow.php', {follow:follow_id}, function(data){
+      $.post('domain/requests/follow.php', {follow:follow_id}, function(data){
 			//  alert(data);
                 $button.addClass('following');
                 $button.removeClass('follow');
@@ -28,7 +28,7 @@ $(document).on('click','.follow-btn', function(e){
 
      });
     } else {
-        $.post('domain/ajax/follow.php', {unfollow:follow_id}, function(data){
+        $.post('domain/requests/follow.php', {unfollow:follow_id}, function(data){
             $button.addClass('follow');
             $button.removeClass('following');
             $button.text("Follow");
