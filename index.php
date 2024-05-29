@@ -52,8 +52,6 @@ if (isset($_SESSION['user_id'])) {
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
     <section class="twt-features">
