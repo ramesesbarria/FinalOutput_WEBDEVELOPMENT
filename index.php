@@ -1,8 +1,8 @@
 <?php
 // This is for outputting error logs for debugging purposes.
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 include 'domain/init.php';
 
@@ -67,28 +67,6 @@ if (isset($_SESSION['user_id'])) {
             <p>Join the conversation.</p>
         </div>
     </section>
-    <footer>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Help Center</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Status</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookies</a></li>
-            <li><a href="#">Ads info</a></li>
-            <li><a href="#">Brand</a></li>
-            <li><a href="#">Apps</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Businesses</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Settings</a></li>
-            <li>© 2021 Twitter Clone</li>
-        </ul>
-    </footer>
 </main>
 
 <script src="resources/js/jquery-3.4.1.slim.min.js"></script>
