@@ -84,16 +84,4 @@ $(function () {
             })
         });
     });
-
-
-    $(document).on('click', '.reply', function () {
-        var tweet_id = $(this).data('tweet');
-        var user_id = $(this).data('user');
-        $counter = $(this).find(".likes-count");
-        $count = $counter.text();
-        $button = $(this);
-
-        console.log(tweet_id);
-        console.log(user_id);
-    });
 });
