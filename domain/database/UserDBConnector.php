@@ -5,7 +5,7 @@ class UserDBConnector extends DBConnector
 {
     protected static $pdo;
 
-    public static function checkInput($input)
+    public static function checkInput($input): string
     {
         $input = htmlspecialchars($input);
         $input = trim($input);
@@ -29,7 +29,6 @@ class UserDBConnector extends DBConnector
             return false;
         }
     }
-
 
     public static function create($table, $fields = array())
     {
@@ -113,21 +112,6 @@ class UserDBConnector extends DBConnector
 
     }
 
-    public static function delete($table, $array)
-    {
-        $sql = "DELETE FROM " . $table;
-        $where = " WHERE ";
-
-        foreach ($array as $key => $value) {
-            $sql .= $where . $key . " = " . $value . "";
-            $where = " AND ";
-        }
-        $sql .= ";";
-
-        $stmt = self::connect()->prepare($sql);
-        $stmt->execute();
-    }
-
     public static function getData($id)
     {
         $stmt = self::connect()->prepare("SELECT * from `users` WHERE `id` = :id");
@@ -143,7 +127,7 @@ class UserDBConnector extends DBConnector
         header('location: ../index.php');
     }
 
-    public static function checkEmail($email)
+    public static function checkEmail($email): bool
     {
         $stmt = self::connect()->prepare("SELECT `email` from `users` WHERE `email` = :email");
         $stmt->bindParam(":email", $email, PDO::PARAM_STR);
@@ -154,7 +138,7 @@ class UserDBConnector extends DBConnector
         } else return false;
     }
 
-    public static function checkUserName($username)
+    public static function checkUserName($username): bool
     {
         $stmt = self::connect()->prepare("SELECT `username` from `users` WHERE `username` = :username");
         $stmt->bindParam(":username", $username, PDO::PARAM_STR);
@@ -165,7 +149,7 @@ class UserDBConnector extends DBConnector
         } else return false;
     }
 
-    public static function checkLogIn()
+    public static function checkLogIn(): bool
     {
         if (isset($_SESSION['user_id']))
             return true;

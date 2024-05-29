@@ -1,7 +1,5 @@
 <?php
 
-// try for connect with class
-
 class DBConnector
 {
     protected static $servername = "localhost";
