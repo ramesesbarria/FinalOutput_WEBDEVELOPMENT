@@ -61,21 +61,6 @@ if (isset($_POST['tweet'])) {
         $user_id = $_SESSION['user_id'];
         foreach($mention[1] as $men) {
             $id = UserDBConnector::getIdByUsername($men);
-            if($id != $user_id ) {
-                $data_notify = [
-                    'notify_for' => $id ,
-                    'notify_from' => $user_id ,
-                    'target' => $post_id , 
-                    'type' => 'mention' ,
-                     'time' => date("Y-m-d H:i:s") ,
-                     'count' => '0' , 
-                     'status' => '0'
-                  ];
-          
-                  PostDBConnector::create('notifications' , $data_notify);
-                
-            } 
-            
         }
         // end notification
         //  add trends to database

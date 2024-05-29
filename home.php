@@ -20,8 +20,6 @@ if (UserDBConnector::checkLogIn() === false)
 // use the user's ID to retrieve the relevant data.
 // retrieves the user's tweets
 $tweets = PostDBConnector::posts($user_id);
-// retrieves the count of the user's notifications.
-$notify_count = UserDBConnector::GetNotificationCount($user_id);
 ?>
 
 

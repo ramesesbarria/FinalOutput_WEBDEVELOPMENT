@@ -10,7 +10,6 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
     $tweets = PostDBConnector::tweetsUser($profileData->id);
     $liked_tweets = PostDBConnector::likedTweets($profileData->id);
     $media_tweets = PostDBConnector::mediaTweets($profileData->id);
-    $notify_count = UserDBConnector::GetNotificationCount($user_id);
 
     if (!$profileData)
         header('location: index.php');

@@ -189,57 +189,5 @@ class UserDBConnector extends DBConnector
         $user = $stmt->fetch(PDO::FETCH_OBJ);
         return $user->username;
     }
-
-    public static function search($search)
-    {
-        $stmt = self::connect()->prepare("SELECT `id`,`username`,`name`,`img`,`imgCover` FROM `users`
-            WHERE `username` LIKE ? OR `name` LIKE ?");
-        $stmt->bindValue(1, $search . '%', PDO::PARAM_STR);
-        $stmt->bindValue(2, $search . '%', PDO::PARAM_STR);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-    // The SELECT COUNT(notify_for) is used to count the number of rows in the notifications table where the
-    // notify_for column matches the user's ID. The COUNT is used to count the number of rows that match a
-    // specified condition. The as count part is an alias that allows the result of the COUNT function to be
-    // referred to as count in the result set.  The FROM 'notifications' specifies the table from which to select data.
-    //  The WHERE notify_for = :user_id AND count = 0 part is the condition under which rows will be counted.
-    // It specifies that the notify_for column must equal the user's ID (represented by :user_id), and the
-    // count column must be 0. In the context of this application, this means that the notification
-    // has not yet been viewed by the user.
-    public static function GetNotificationCount($user_id)
-    {
-        $sql_query = self::connect()->prepare(
-            "SELECT COUNT(notify_for) as notification_count 
-                    FROM `notifications` 
-                    WHERE notify_for = :user_id 
-                        AND count = 0"
-        );
-        $sql_query->bindParam(":user_id", $user_id, PDO::PARAM_STR);
-        $sql_query->execute();
-        $result_object = $sql_query->fetch(PDO::FETCH_OBJ);
-        return $result_object->notification_count;
-    }
-
-    public static function notification($user_id)
-    {
-        $stmt = self::connect()->prepare("SELECT * FROM `notifications`
-            WHERE notify_for = :user_id ORDER BY time DESC");
-        $stmt->bindParam(":user_id", $user_id, PDO::PARAM_STR);
-        $stmt->execute();
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-    public static function updateNotifications($user_id)
-    {
-        $stmt = self::connect()->prepare("UPDATE `notifications` SET count = 1
-             WHERE notify_for = :user_id AND count = 0");
-        $stmt->bindParam(":user_id", $user_id, PDO::PARAM_STR);
-        $s = $stmt->execute();
-        if ($s)
-            return true;
-        else return false;
-    }
 }
 

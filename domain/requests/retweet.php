@@ -190,18 +190,6 @@ if (isset($_POST['qoute']) && !empty($_POST['qoute'])) {
 
     }
     UserDBConnector::create('retweets', $data_tweet);
-
-    // for notification
-    if ($for_user != $user_id)
-        PostDBConnector::create('notifications', $data_notify);
-
-    //  }
-
-
-    // echo `<div class="tmp d-none">
-    //      `+ Tweet::countRetweets($tweet_id) +`
-    // </div>` ;
-
 }
 if (isset($_POST['retweet']) && !empty($_POST['retweet'])) {
     $tweet_id = $_POST['retweet'];
@@ -316,11 +304,6 @@ if (isset($_POST['retweet']) && !empty($_POST['retweet'])) {
 
     UserDBConnector::create('retweets', $data_tweet);
 
-    // for notification
-    if ($for_user != $user_id)
-        PostDBConnector::create('notifications', $data_notify);
-
-
     echo `<div class="tmp d-none">
              ` + PostDBConnector::countRetweets($tweet_id) + `
 		</div>`;
@@ -343,21 +326,6 @@ if (isset($_POST['unretweet']) && !empty($_POST['unretweet'])) {
         $target = $retweet->retweet_id;
     }
 
-
-    if ($for_user != $user_id) {
-        $data = [
-            'notify_for' => $for_user,
-            'notify_from' => $user_id,
-            'target' => $target,
-            'type' => "'retweet'",
-        ];
-
-        // var_dump($data);
-        // die();
-
-        PostDBConnector::delete('notifications', $data);
-
-    }
     PostDBConnector::undoRetweet($user_id, $tweet_id);
 
     echo `<div class="tmp d-none">

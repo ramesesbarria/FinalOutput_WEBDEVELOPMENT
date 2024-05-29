@@ -5,7 +5,6 @@ include 'domain/init.php';
 $user_id = $_SESSION['user_id'];
 
 $user = UserDBConnector::getData($user_id);
-$notify_count = UserDBConnector::GetNotificationCount($user_id);
 
 if (UserDBConnector::checkLogIn() === false)
     header('location: index.php');
