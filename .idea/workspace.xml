@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Add resources and image files" />
+    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="IDE generated files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,24 +21,24 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ramesesluis777"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ramesesluis777&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ramesesluis777/FinalOutput_WEBDEVELOPMENT.git",
-    "accountId": "542a68e0-ca76-42a9-ac48-3787b0f21536"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ramesesluis777/FinalOutput_WEBDEVELOPMENT.git&quot;,
+    &quot;accountId&quot;: &quot;542a68e0-ca76-42a9-ac48-3787b0f21536&quot;
   }
-}]]></component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "git-widget-placeholder": "master",
-    "node.js.selected.package.tslint": "(autodetect)"
+}</component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="Setup initial index.php and project">
       <option name="closed" value="true" />
@@ -117,7 +120,31 @@
       <option name="project" value="LOCAL" />
       <updated>1716963236957</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Configured PHP backend logic">
+      <option name="closed" value="true" />
+      <created>1716963563046</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716963563046</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added X UI PHP">
+      <option name="closed" value="true" />
+      <created>1716963787528</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716963787529</updated>
+    </task>
+    <task id="LOCAL-00013" summary="IDE generated files">
+      <option name="closed" value="true" />
+      <created>1716963917408</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716963917408</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -130,6 +157,9 @@
     <MESSAGE value="Setup initial index.php and project" />
     <MESSAGE value="Setup database and models" />
     <MESSAGE value="Add resources and image files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add resources and image files" />
+    <MESSAGE value="Configured PHP backend logic" />
+    <MESSAGE value="Added X UI PHP" />
+    <MESSAGE value="IDE generated files" />
+    <option name="LAST_COMMIT_MESSAGE" value="IDE generated files" />
   </component>
 </project>
