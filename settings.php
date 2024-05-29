@@ -157,6 +157,7 @@ if (UserDBConnector::checkLogIn() === false)
                                     <input type="email" name="email" value="<?php echo $user->email; ?>"
                                            class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                                            placeholder="Enter email">
+
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">Username</label>
@@ -165,8 +166,10 @@ if (UserDBConnector::checkLogIn() === false)
                                 </div>
 
                                 <div class="text-center">
+
                                     <button type="submit" name="submit" class="btn btn-primary">Save Changes</button>
                                 </div>
+
                             </form>
 
                         </div>
@@ -201,6 +204,7 @@ if (UserDBConnector::checkLogIn() === false)
                                     <input type="password" name="old_password" class="form-control"
                                            id="exampleInputEmail1" aria-describedby="emailHelp"
                                            placeholder="Old Password">
+
                                 </div>
                                 <div class="form-group">
                                     <label for="exampleInputPassword1">New Password</label>

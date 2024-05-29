@@ -27,6 +27,7 @@ if (UserDBConnector::checkLogIn() === false)
 $tweets = PostDBConnector::posts($user_id);
 ?>
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -172,6 +173,7 @@ $tweets = PostDBConnector::posts($user_id);
                     <div class="grid-toolbar-center">
                         <div class="center-input-search">
                             <div class="input-group-login" id="whathappen">
+
                                 <div class="container">
                                     <div class="part-1">
                                         <div class="header">
@@ -227,6 +229,8 @@ $tweets = PostDBConnector::posts($user_id);
                                                     <div class="hash-box">
 
                                                         <ul style="margin-bottom: 0;">
+
+
                                                         </ul>
 
                                                     </div>
