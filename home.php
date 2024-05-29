@@ -1,8 +1,8 @@
 <?php
-// This is for outputting error logs for debugging purposes.
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+//// This is for outputting error logs for debugging purposes.
+//ini_set('display_errors', 1);
+//ini_set('display_startup_errors', 1);
+//error_reporting(E_ALL);
 
 // Including the init.php file from the domain  directory. This file contains initialization code for the application,
 // such as setting up database connections, loading libraries, or other setup tasks.
