@@ -352,7 +352,6 @@ $tweets = PostDBConnector::posts($user_id);
         <script src="resources/js/photo.js?v=<?php echo time(); ?>"></script>
         <script type="text/javascript" src="resources/js/hashtag.js"></script>
         <script type="text/javascript" src="resources/js/like.js"></script>
-        <script type="text/javascript" src="resources/js/comment.js?v=<?php echo time(); ?>"></script>
         <script type="text/javascript" src="resources/js/retweet.js?v=<?php echo time(); ?>"></script>
         <script type="text/javascript" src="resources/js/follow.js?v=<?php echo time(); ?>"></script>
         <script src="https://kit.fontawesome.com/38e12cc51b.js" crossorigin="anonymous"></script>

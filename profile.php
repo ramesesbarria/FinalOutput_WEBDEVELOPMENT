@@ -411,7 +411,6 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 <script src="resources/js/users.js?v=<?php echo time(); ?>"></script>
 <script type="text/javascript" src="resources/js/hashtag.js"></script>
 <script type="text/javascript" src="resources/js/like.js"></script>
-<script type="text/javascript" src="resources/js/comment.js?v=<?php echo time(); ?>"></script>
 <script type="text/javascript" src="resources/js/retweet.js?v=<?php echo time(); ?>"></script>
 <script src="https://kit.fontawesome.com/38e12cc51b.js" crossorigin="anonymous"></script>
 <!-- <script src="resources/js/jquery-3.4.1.slim.min.js"></script> -->
