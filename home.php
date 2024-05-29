@@ -160,14 +160,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                                         } ?></strong></p>
                                 <p class="username">@<?php echo $user->username; ?></p>
                             </div>
-                            <div class="mt-arrow">
-                                <img
-                                        src="https://i.ibb.co/mRLLwdW/arrow-down.png"
-                                        alt=""
-                                        height="18.75px"
-                                        width="18.75px"
-                                />
-                            </div>
+
                         </div>
                     </div>
                 </div>

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Removed NF" />
+    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Removed NF from UI - Removed SF PHP" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716966197195</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Removed NF from UI - Removed SF PHP">
+      <option name="closed" value="true" />
+      <created>1716966448321</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966448321</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -174,7 +182,9 @@
     <MESSAGE value="Added X UI PHP" />
     <MESSAGE value="IDE generated files" />
     <MESSAGE value="Added twitter logo" />
-    <MESSAGE value="Removed NF" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed NF" />
+    <MESSAGE value="Removed NF PHP" />
+    <MESSAGE value="Removed NF from UI - Removed SF PHP" />
+    <MESSAGE value="Removed NF PHP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed NF PHP" />
   </component>
 </project>
