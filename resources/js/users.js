@@ -68,7 +68,6 @@ $(function () {
     $(document).on('click', '.count-followers-i', function () {
         var user_id = $(this).data('follow');
 
-
         $.post('domain/requests/users.php', {follower: user_id}, function (data) {
             $('.popupUsers').html(data);
 
