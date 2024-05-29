@@ -86,7 +86,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                 <div class="sidebar-left">
                     <div class="grid-sidebar" style="margin-top: 12px">
                         <div class="icon-sidebar-align">
-                            <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1716854400&semt=ais_user"
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
                                  alt="" height="30px" width="30px"/>
                         </div>
                     </div>
@@ -316,15 +316,15 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                         </div>
                     </div>
 
-                    <div class="trends bg-black p-4 max-w-md mx-auto mt-100 rounded border border-gray-300"> <ul>
+                    <div class="trends bg-white p-4 max-w-md mx-auto mt-100 rounded border border-gray-300"> <ul>
                             <li class="nav-list header flex justify-between items-center mb-4">
-                                <h2 class="main-text font-bold text-lg" style="color: white;">Trends for you</h2>
+                                <h2 class="main-text font-bold text-lg" style="color: black;">Trends for you</h2>
                                 <i class="fas fa-cog text-gray-500"></i>
                             </li>
                             <li class="nav-list flex justify-between items-center py-2 border-b border-gray-200">
                                 <div class="trend-list">
                                     <p class="sub-text text-gray-500 text-sm">Trending in Cebu</p>
-                                    <p class="main-text font-bold text-lg" style="color: white;">#BINI</p>                                    <p class="sub-text text-gray-500 text-sm">274K Tweets</p>
+                                    <p class="main-text font-bold text-lg" style="color: black;">#BINI</p>                                    <p class="sub-text text-gray-500 text-sm">274K Tweets</p>
                                 </div>
                                 <div class="trend-icon">
                                     <i class="fas fa-chevron-down text-gray-500"></i>
@@ -333,7 +333,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                             <li class="nav-list flex justify-between items-center py-2 border-b border-gray-200">
                                 <div class="trend-list">
                                     <p class="sub-text text-gray-500 text-sm">Trending in Cebu</p>
-                                    <p class="main-text font-bold text-lg" style="color: white;">#TaylorSwift</p>
+                                    <p class="main-text font-bold text-lg" style="color: black;">#TaylorSwift</p>
                                     <p class="sub-text text-gray-500 text-sm">154K Tweets</p>
                                 </div>
                                 <div class="trend-icon">
@@ -343,7 +343,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                             <li class="nav-list flex justify-between items-center py-2 border-b border-gray-200">
                                 <div class="trend-list">
                                     <p class="sub-text text-gray-500 text-sm">Trending in Cebu</p>
-                                    <p class="main-text font-bold text-lg" style="color: white;">#Lover</p>
+                                    <p class="main-text font-bold text-lg" style="color: black;">#Lover</p>
                                     <p class="sub-text text-gray-500 text-sm">135K Tweets</p>
                                 </div>
                                 <div class="trend-icon">
@@ -353,7 +353,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                             <li class="nav-list flex justify-between items-center py-2 border-b border-gray-200">
                                 <div class="trend-list">
                                     <p class="sub-text text-gray-500 text-sm">Trending in Cebu</p>
-                                    <p class="main-text font-bold text-lg" style="color: white;">#CAS2024MANILA</p>
+                                    <p class="main-text font-bold text-lg" style="color: black;">#CAS2024MANILA</p>
                                     <p class="sub-text text-gray-500 text-sm">124K Tweets</p>
                                 </div>
                                 <div class="trend-icon">
@@ -363,7 +363,7 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
                             <li class="nav-list flex justify-between items-center py-2 border-b border-gray-200">
                                 <div class="trend-list">
                                     <p class="sub-text text-gray-500 text-sm">Trending in Cebu</p>
-                                    <p class="main-text font-bold text-lg" style="color: white;">#TGIF</p>
+                                    <p class="main-text font-bold text-lg" style="color: black;">#TGIF</p>
                                     <p class="sub-text text-gray-500 text-sm">43K Tweets</p>
                                 </div>
                                 <div class="trend-icon">

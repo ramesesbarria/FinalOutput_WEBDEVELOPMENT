@@ -35,7 +35,7 @@ if (UserDBConnector::checkLogIn() === false)
         <div class="sidebar-left">
             <div class="grid-sidebar" style="margin-top: 12px">
                 <div class="icon-sidebar-align">
-                    <img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.44546679.1716854400&semt=ais_user"
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png"
                          alt="" height="30px" width="30px"/>
                 </div>
             </div>
