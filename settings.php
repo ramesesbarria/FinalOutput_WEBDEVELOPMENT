@@ -21,7 +21,6 @@ if (UserDBConnector::checkLogIn() === false)
     <!-- time function to force css file to reload -->
 
     <link rel="stylesheet" href="resources/css/profile_style.css?v=<?php echo time(); ?>">
-    <link rel="shortcut icon" type="image/png" href="resources/images/twitter.svg">
 
 </head>
 <body>

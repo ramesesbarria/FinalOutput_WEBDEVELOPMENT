@@ -35,7 +35,6 @@ $tweets = PostDBConnector::posts($user_id);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Twitter</title>
 
-    <link rel="shortcut icon" type="image/png" href="resources/images/twitter.svg">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="resources/css/home_style.css?v=<?php echo time(); ?>">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

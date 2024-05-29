@@ -19,7 +19,6 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"/>
     <link rel="stylesheet" href="resources/css/index_style.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="shortcut icon" type="image/png" href="resources/images/twitter.svg">
 </head>
 <body>
 <main class="twt-main">
