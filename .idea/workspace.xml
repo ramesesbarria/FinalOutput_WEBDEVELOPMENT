@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Added twitter logo" />
+    <list default="true" id="ae6d626c-4591-4812-9f7c-a9cd8ee1fec3" name="Changes" comment="Removed NF" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716965874543</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Removed NF">
+      <option name="closed" value="true" />
+      <created>1716966197195</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716966197195</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +174,7 @@
     <MESSAGE value="Added X UI PHP" />
     <MESSAGE value="IDE generated files" />
     <MESSAGE value="Added twitter logo" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added twitter logo" />
+    <MESSAGE value="Removed NF" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed NF" />
   </component>
 </project>

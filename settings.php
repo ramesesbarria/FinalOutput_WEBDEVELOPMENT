@@ -51,26 +51,6 @@ if (UserDBConnector::checkLogIn() === false)
                 </div>
             </a>
 
-            <a href="notification.php">
-                <div class="grid-sidebar">
-                    <div class="icon-sidebar-align position-relative">
-                        <?php if ($notify_count > 0) { ?>
-                            <i class="notify-count"><?php echo $notify_count; ?></i>
-                        <?php } ?>
-                        <img
-                                src="https://i.ibb.co/Gsr7qyX/notification.png"
-                                alt=""
-                                height="26.25px"
-                                width="26.25px"
-                        />
-                    </div>
-
-                    <div class="wrapper-left-elements">
-                        <a href="notification.php" style="margin-top: 4px"><strong>Notification</strong></a>
-                    </div>
-                </div>
-            </a>
-
             <a href="<?php echo BASE_URL . $user->username; ?>">
                 <div class="grid-sidebar">
                     <div class="icon-sidebar-align">
