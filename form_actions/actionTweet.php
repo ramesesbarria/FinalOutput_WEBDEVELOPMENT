@@ -1,7 +1,7 @@
 <?php 
 include '../domain/init.php';
-require_once '../domain/classes/model/Validator.php';
-require_once '../domain/classes/model/Image.php';
+require_once '../domain/database/model/Validator.php';
+require_once '../domain/database/model/Image.php';
 
 use model\Image;
 use model\Validator;

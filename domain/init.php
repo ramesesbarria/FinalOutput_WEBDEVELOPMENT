@@ -1,9 +1,9 @@
 <?php
 
-include 'classes/DBConnector.php';
-include 'classes/UserDBConnector.php';
-include 'classes/FollowDBConnector.php';
-include 'classes/PostDBConnector.php';
+include 'database/DBConnector.php';
+include 'database/UserDBConnector.php';
+include 'database/FollowDBConnector.php';
+include 'database/PostDBConnector.php';
 
 session_start();
  

@@ -1,6 +1,6 @@
 <?php 
 include '../domain/init.php';
-require_once '../domain/classes/model/Validator.php';
+require_once '../domain/database/model/Validator.php';
 use model\Validator;
 
 if (isset($_POST['signup'])) {
