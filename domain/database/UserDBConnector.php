@@ -82,16 +82,6 @@ class UserDBConnector extends DBConnector
             'time' => date("Y-m-d H:i:s")
         ];
         UserDBConnector::create('follow', $data);
-        $data_notify = [
-            'notify_for' => 2,
-            'notify_from' => $user_id,
-            'target' => 0,
-            'type' => 'follow',
-            'time' => date("Y-m-d H:i:s"),
-            'count' => '0',
-            'status' => '0'
-        ];
-        PostDBConnector::create('notifications', $data_notify);
 
         $_SESSION['welcome'] = 'welcome';
         header('location: ../home.php');

@@ -34,18 +34,6 @@ if (!empty($_POST['unlike'])) {
     $get_id = $_POST['user_id'];
     $for_user = PostDBConnector::getData($tweet_id)->user_id;
 
-
-    if ($for_user != $user_id) {
-        $data = [
-            'notify_for' => $for_user,
-            'notify_from' => $user_id,
-            'target' => $tweet_id,
-            'type' => "'like'",
-        ];
-
-        PostDBConnector::delete('notifications', $data);
-
-    }
     PostDBConnector::unLike($user_id, $tweet_id);
 
     echo `<div class="tmp d-none">
