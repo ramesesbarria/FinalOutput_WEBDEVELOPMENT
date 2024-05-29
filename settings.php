@@ -242,7 +242,6 @@ if (UserDBConnector::checkLogIn() === false)
     </div>
 </div>
 <script src="resources/js/search.js"></script>
-<script src="resources/js/follow.js"></script>
 <script src="https://kit.fontawesome.com/38e12cc51b.js" crossorigin="anonymous"></script>
 <!-- <script src="resources/js/jquery-3.4.1.slim.min.js"></script> -->
 <script src="resources/js/popper.min.js"></script>

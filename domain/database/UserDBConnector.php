@@ -75,12 +75,6 @@ class UserDBConnector extends DBConnector
 
         // make user follow the owner by default and notofications also
         date_default_timezone_set("Africa/Cairo");
-        $data = [
-            'follower_id' => $user_id,
-            'following_id' => 2,
-            'time' => date("Y-m-d H:i:s")
-        ];
-        UserDBConnector::create('follow', $data);
 
         $_SESSION['welcome'] = 'welcome';
         header('location: ../home.php');

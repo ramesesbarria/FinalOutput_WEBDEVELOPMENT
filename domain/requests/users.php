@@ -17,14 +17,12 @@ if (isset($_POST['retweetby']) && !empty($_POST['retweetby'])) {
 
 } else if (isset($_POST['follower']) && !empty($_POST['follower'])) {
     $u_id = $_POST['follower'];
-// $user       = UserDBConnector::getData($user_id);
-    $users = FollowDBConnector::usersFollowers($u_id);
+    $users = array();
     $headline = "Followers";
 
 } else if (isset($_POST['following']) && !empty($_POST['following'])) {
     $u_id = $_POST['following'];
-// $user       = UserDBConnector::getData($user_id);
-    $users = FollowDBConnector::usersFollowing($u_id);
+    $users = array();
     $headline = "Following";
 
 } else {
@@ -46,7 +44,7 @@ if ($flag) {
             <div class="box-share-users">
                 <?php foreach ($users as $user) {
                     $u = UserDBConnector::getData($user->user_id);
-                    $user_follow = FollowDBConnector::isUserFollow($user_id, $user->user_id);
+                    $user_follow = false;
                     ?>
                     <div class="grid-share grid-users">
                         <a style="position: relative; z-index:999999; color:black"
@@ -66,9 +64,6 @@ if ($flag) {
                                 </a>
                             </p>
                             <p class="username">@<?php echo $u->username; ?>
-                                <?php if (FollowDBConnector::FollowsYou($u->id, $user_id)) { ?>
-                                <span class="ml-1 follows-you">Follows You</span></p>
-                            <?php } ?>
                             </p>
                         </div>
                         <div>

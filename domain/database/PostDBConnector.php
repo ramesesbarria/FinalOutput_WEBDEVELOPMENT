@@ -8,7 +8,7 @@ class PostDBConnector extends UserDBConnector
     public static function posts($user_id)
     {
         $stmt = self::connect()->prepare("SELECT * from `posts`
-        WHERE user_id = :user_id OR user_id IN (SELECT following_id from `follow` WHERE follower_id = :user_id)
+        WHERE user_id = :user_id
         ORDER BY post_on DESC");
         $stmt->bindParam(":user_id", $user_id, PDO::PARAM_STR);
         $stmt->execute();

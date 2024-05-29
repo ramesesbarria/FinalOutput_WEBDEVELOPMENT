@@ -285,7 +285,7 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
                             <!-- End Edit Modal -->
 
                         <?php } else {
-                            $user_follow = FollowDBConnector::isUserFollow($user_id, $profileData->id);
+                            $user_follow = false;
                             ?>
                             <button class=" follow-btn
                    <?= $user_follow ? 'following' : 'follow' ?>"
@@ -302,10 +302,6 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
                     </div>
                     <div class="home-title">
                         <h4><?php echo $profileData->name; ?></h4>
-                        <p class="user-handle" style="color: gray;">@<?php echo $profileData->username; ?>
-                            <?php if (FollowDBConnector::FollowsYou($profileData->id, $user_id)) { ?>
-                            <span class="ml-1 follows-you">Follows You</span></p>
-                        <?php } ?>
                         <p class="bio"><?php echo $profileData->bio; ?> </p>
                     </div>
 
@@ -331,13 +327,13 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
                         <div class="col-md-3">
                             <i class="count-following-i"
                                data-follow="<?php echo $profileData->id; ?>">
-                                <span class="home-follow-count count-following"><?php echo FollowDBConnector::countFollowing($profileData->id); ?></span>
+                                <span class="home-follow-count count-following"><?php echo 0; ?></span>
                                 Followings</i>
                         </div>
                         <div class="col-md-3">
                             <i class="count-followers-i"
                                data-follow="<?php echo $profileData->id; ?>">
-                                <span class="home-follow-count count-followers"><?php echo FollowDBConnector::countFollowers($profileData->id); ?></span>
+                                <span class="home-follow-count count-followers"><?php echo 0; ?></span>
                                 Followers</i>
                         </div>
                     </div>
@@ -407,7 +403,6 @@ if (isset($_GET['username']) === true && empty($_GET['username']) === false) {
 
 <script src="resources/js/search.js"></script>
 <script src="resources/js/photo.js"></script>
-<script src="resources/js/follow.js?v=<?php echo time(); ?>"></script>
 <script src="resources/js/users.js?v=<?php echo time(); ?>"></script>
 <script type="text/javascript" src="resources/js/hashtag.js"></script>
 <script type="text/javascript" src="resources/js/like.js"></script>
