@@ -34,7 +34,6 @@ $notify_count = UserDBConnector::GetNotificationCount($user_id);
 
     <link rel="shortcut icon" type="image/png" href="resources/images/twitter.svg">
     <link rel="stylesheet" href="resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="resources/css/all.min.css">
     <link rel="stylesheet" href="resources/css/home_style.css?v=<?php echo time(); ?>">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
