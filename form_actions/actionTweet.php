@@ -63,15 +63,7 @@ if (isset($_POST['tweet'])) {
             $id = UserDBConnector::getIdByUsername($men);
         }
         // end notification
-        //  add trends to database
-        preg_match_all("/#+([a-zA-Z0-9_]+)/i", $status, $hashtag);
-       
-        if(!empty($hashtag) ){ 
 
-            PostDBConnector::addTrend($status);
-        }
-        // end add trend
-       
         header('location: ../home.php');
     } else {
         $_SESSION['errors_tweet'] = $errors;

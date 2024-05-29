@@ -135,13 +135,9 @@ $inner_qoute = $tweet_innerr->retweet_msg;
 
 } 
 $tweet_link = $tweet->id;
-
-if($retweet_sign)
-$comment_count = PostDBConnector::countComments($retweeted_tweet->id);
-else  $comment_count = PostDBConnector::countComments($tweet->id);
+$comment_count = 0;
 
 ?>
-         
         <div class="box-tweet feed" style="position: relative;" >
         <a href="status/<?php echo $tweet_link; ?>">
         <span style="position:absolute; width:100%; height:100%; top:0;left: 0; z-index: 1;"></span>

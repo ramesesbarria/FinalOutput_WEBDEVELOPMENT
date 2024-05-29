@@ -7,7 +7,7 @@ if (isset($_POST['qoute']) && !empty($_POST['qoute'])) {
     $get_id = $_POST['user_id'];
     $flag = $_POST['isQoute'];
     $qoq = $_POST['qoq'];
-    $comment = UserDBConnector::checkInput($_POST['comment']);
+    $comment = '';
 
     $retweet = PostDBConnector::getRetweet($tweet_id);
 
